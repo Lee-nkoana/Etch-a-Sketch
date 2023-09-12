@@ -18,6 +18,15 @@ function createGrid(x) {
     }
   }
 
+function promptUser(){
+    const gridSize = prompt("Enter new grid size: ");
+    if((gridSize <= 100) && (gridSize < 1)){
+        createGrid(gridSize);
+    }
+    else{
+        return;
+    }
+}
 
 document.addEventListener('DOMContentLoaded', () =>{
    createGrid(16); 
