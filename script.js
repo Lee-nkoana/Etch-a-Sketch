@@ -11,8 +11,13 @@ function createGrid(x) {
       const gridItem = document.createElement("div");
       gridItem.classList.add("grid-item");
       gridContainer.appendChild(gridItem);
+
+      gridItem.addEventListener("mouseenter", function () {
+        gridItem.classList.add("hovered");
+      });
     }
   }
+
 
 document.addEventListener('DOMContentLoaded', () =>{
    createGrid(16); 

@@ -26,6 +26,9 @@ body{
 }
 
 .grid-item {
-	background-color: lightgray;
 	border: 1px solid gray;
   }
+
+.grid-item.hovered{
+	background-color: black;
+}
