@@ -20,7 +20,7 @@ function createGrid(x) {
 
 function promptUser(){
     const gridSize = prompt("Enter new grid size: ");
-    if((gridSize <= 100) && (gridSize < 1)){
+    if((gridSize <= 100) && (gridSize > 0)){
         createGrid(gridSize);
     }
     else{
